@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Trending Movies, TV Shows, and People Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a web application that displays trending movies, TV shows, and people using data from The Movie Database (TMDb) API. The application allows users to view trending content, search for specific movies, shows, or people, and view details about each item.
 
-## Available Scripts
+## Project Preview
+![image](https://github.com/EsraaSamyZ/Movie-App-react/assets/142722769/d5f98b1c-7336-4103-9e36-c60fdb417638)
 
-In the project directory, you can run:
+## Functionality
 
-### `npm start`
+### Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Retrieve daily trending lists from the TMDb API.
+- Filter trending content by "movie," "tv," or "person."
+- Perform server-side searching for movies, TV shows, and people.
+- Display detailed information about each item.
+- Utilize responsive design and ensure cross-browser compatibility.
+- Implement routing using React Router for a smooth user experience.
+- Use Material UI (MUI) for a consistent and user-friendly interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API Endpoints
 
-### `npm test`
+- Trending Content: [https://api.themoviedb.org/3/trending/all/day?api_key=YOUR_API_KEY](https://api.themoviedb.org/3/trending/all/day?api_key=YOUR_API_KEY)
+- Search: [https://api.themoviedb.org/3/search/multi?api_key=YOUR_API_KEY&query={query}](https://api.themoviedb.org/3/search/multi?api_key=YOUR_API_KEY&query={query})
+- Details: [https://api.themoviedb.org/3/{media_type}/{item_id}?api_key=YOUR_API_KEY](https://api.themoviedb.org/3/{media_type}/{item_id}?api_key=YOUR_API_KEY)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development Instructions
 
-### `npm run build`
+- The project is structured for clarity and maintainability.
+- Code is well-organized, commented, and follows best practices.
+- Business rules are correctly implemented.
+- The application is responsive and compatible with various browsers.
+- Functional components with hooks are used, leveraging the latest ReactJS features.
+- Create React App was used for the initial setup.
+- React Router is employed for client-side routing.
+- Material UI (MUI) components are used to speed up development and ensure a polished UI.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository to your local machine:
+2. Install the project dependencies
+3. Obtain your TMDb API key by signing up on the TMDb website.
+4. Create a .env.local file in the project root and add your API key
+5. Start the development server
+6.Open your web browser and visit http://localhost:3000 to view the application.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ReactJS
+- React Router
+- Material UI (MUI)
+- Axios for API requests
+- Create React App
+- HTML5/CSS3
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
