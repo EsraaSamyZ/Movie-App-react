@@ -16,7 +16,7 @@ const useStyles = {
 const MoviesList = ({ moviesList }) => {
   return (
     <MoviesListContainer>
-      <Container>
+      <Container style={{ marginTop: "50px" }}>
         <Typography variant="h5" sx={useStyles.title}>
           Latest Movies & TV Shows
         </Typography>
