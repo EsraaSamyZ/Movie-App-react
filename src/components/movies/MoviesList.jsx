@@ -24,10 +24,11 @@ const MoviesList = ({ moviesList }) => {
           {moviesList.slice(0, 6).map((movie) => (
             <Grid item xs={12} sm={6} md={4} lg={4} key={movie.id}>
               <MovieCard
-                id={movie.id}
+                itemId={movie.id}
                 posterPath={movie.poster_path}
                 voteAverage={movie.vote_average}
                 originalTitle={movie.title ? movie.title : movie.name}
+                mediaType={movie.media_type}
               />
             </Grid>
           ))}

@@ -14,9 +14,11 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/movies" exact element={<Movies />} />
-        <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/movie/:itemId" element={<MovieDetails mediaType="movie" />} />
+        <Route path="/tv/:itemId" element={<MovieDetails mediaType="tv" />} />
+        <Route path="/person/:itemId" element={<MovieDetails mediaType="person" />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="/tv-shows" element={<TvShows />} />
         <Route path="/celebs" element={<Celebs />} />
