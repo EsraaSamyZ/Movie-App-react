@@ -23,7 +23,7 @@ const MoviesList = ({ moviesList }) => {
         <Grid container spacing={6}>
           {moviesList.slice(0, 6).map((movie) => (
             <Grid item xs={12} sm={6} md={4} lg={4} key={movie.id}>
-              <MovieCard
+              <MovieCard data-testid="movie-card"
                 itemId={movie.id}
                 posterPath={movie.poster_path}
                 voteAverage={movie.vote_average}
